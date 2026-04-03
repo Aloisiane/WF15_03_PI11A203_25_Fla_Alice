@@ -6,10 +6,21 @@
 基本の設定
 ================================== */
 body {
-    background-image: url(../images/FondPageWeb.jpg);
+    background-image: url("../images/FondPageWeb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: sans-serif;
     color: #666;
     line-height: 1.8;
+}
+
+.main-visual img {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    display: block;
 }
 
 /* ==================================
@@ -222,6 +233,10 @@ pour qu'il y ai un bord blanc
 }
 
 .content img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
     margin-bottom: 1rem;
 }
 
